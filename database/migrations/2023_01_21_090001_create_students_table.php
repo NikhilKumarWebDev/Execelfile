@@ -15,14 +15,14 @@ return new class extends Migration
     {
         Schema::create('students', function (Blueprint $table) {
             $table->id();
-            $table->string('firstname');
-            $table->string('lastname');
-            $table->string('jobtittle');
+            $table->string('firstname')->nullable();
+            $table->string('lastname')->nullable();
+            $table->string('jobtittle')->nullable();
             $table->string('email')->unique();
-            $table->string('birthdate');
-            $table->string('phone');
-            $table->string('domain');
-            $table->string('comments');
+            $table->string('birthdate')->nullable();
+            $table->string('phone')->nullable();
+            $table->string('domain')->nullable();
+            $table->string('comments')->nullable();
             $table->timestamps();
         });
     }
