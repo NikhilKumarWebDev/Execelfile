@@ -16,4 +16,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [StudentController::class,'index']);
 Route::post('/import',[StudentController::class,'import']);
-Route::get('/show',[StudentController::class,'show']);
+
